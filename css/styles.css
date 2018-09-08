@@ -1,0 +1,121 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.clearfix {
+  clear: both;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background-color: #fff;
+  line-height: 1.5;
+}
+p {
+  color: #666;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #6633ff;
+}
+
+
+/* Header-------------------- */
+ul,
+ul li {
+   margin:0;
+   padding: 0;
+   list-style-type: none;
+}
+ul {
+  display: inline-block;
+  position: relative;
+}
+nav ul li {
+  margin: 3px 0;
+
+}
+nav ul li {
+  display: block;
+  position: relative;
+  height: 40px;
+  width: 290px;
+  background-color: skyblue;
+  border: 1px solid red;
+}
+nav {
+  line-height: 1;
+}
+span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.profile-image {
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+.profile-image img {
+  width: 200px;
+}
+.profile-image p {
+  /* width: 200px; */
+  margin: 0 auto;
+  padding: 14px;
+}
+/* End Header-------------------- */
+
+
+
+/* Projects-------------------- */
+img.main-images{
+  width: 290px;
+}
+main {
+  /* width: 320px; */
+  /* margin: auto 0; */
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+.project {
+  display: inline-block;
+  width: 300px;
+  /* background-color: indianred; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* End Projects-------------------- */
+
+/* Footer-------------------- */
+#showhide2 {
+  display: none;
+}
+/* End Footer-------------------- */
+
+
+/* Styles for larger screens */
+@media all (min-width: 768px) {
+  #showhide1 {
+    display: none;
+  }
+}
+
+@media all (min-width: 1024px) {
+
+}
