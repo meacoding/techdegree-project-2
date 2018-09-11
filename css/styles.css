@@ -76,7 +76,7 @@ header nav h1 {
 }
 .profile-image p {
   width: 320px;
-  color: #888;
+  color: #36acd0;
   margin: 0 auto;
   padding: 15px 10px;
 }
@@ -121,6 +121,7 @@ main {
   text-align: left;
 }
 #skills .bar-light-grey div {
+  font-family: 'Source Sans Pro', sans-serif;
   padding-left: 10px;
   color: #fff;
 }
@@ -237,7 +238,7 @@ footer h3 {
     height: 40px;
     width: 290px;
     font-weight: 800;
-    background-color: #e1f5fe;
+    background-color: #fff;
   }
   header nav span {
     display: block;
