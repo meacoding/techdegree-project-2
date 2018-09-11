@@ -6,28 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
 </head>
-  <body>
+  <body id="to-top">
 
     <header class="">
       <nav>
         <h1>Student Name</h1>
         <ul>
-          <li class="uppercase"><span>Home</span></li>
-          <li class="uppercase"><span>Portfolio</span></li>
-          <li class="uppercase"><span>Contact</span></li>
+          <li class="uppercase"><a href="#to-top"><span>Home</span></a></li>
+          <li class="uppercase"><a href="#to-portfolio"><span>Portfolio</span></a></li>
+          <li class="uppercase"><a href="#skills"><span>Skills</span></a></li>
+          <li class="uppercase"><a href="#contact"><span>Contact</span></a></li>
         </ul>
       </nav>
-      <section class="profile-image">
+      <section class="profile-image clearfix">
         <img src="images/responsive-layout-profile.png" alt="Profile Image">
         <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
       </section>
 
     </header>
 
-    <main class="">
+    <main id="to-portfolio">
       <h3 class="uppercase">Portfolio</h3>
       <section class="project">
         <img class="main-images" src="images/portfolio-1.png" alt="Image for Marketing Page">
@@ -65,22 +65,49 @@
         <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
       </section>
     </main>
-
-    <footer>
+    <section id="skills">
+      <h3 class="uppercase">Skills</h3>
+      <div class="bar-light-grey">
+        <div class="blue ninety">HTML</div>
+      </div>
+      <div class="bar-light-grey">
+        <div class="yellow ninety">CSS</div>
+      </div>
+      <div class="bar-light-grey">
+        <div class="dark-blue seventy-five">JavaScript</div>
+      </div>
+      <div class="bar-light-grey">
+        <div class="green seventy-five">jQuery</div>
+      </div>
+      <div class="bar-light-grey">
+        <div class="purple thirty-five">Vue.js</div>
+      </div>
+      <div class="bar-light-grey">
+        <div class="grey twenty-five">SASS</div>
+      </div>
+    </section>
+    <section id="contact">
       <h3 class="uppercase">Contact</h3>
       <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-      <p>Phone <strong>+1 (111) 555-1234</strong></p>
-      <p>Email <strong>email@yoursite.com</strong></p>
-      <hr>
+      <p>Phone &nbsp;&nbsp;<strong>+1 (111) 555-1234</strong></p>
+      <p>
+        Email &nbsp;&nbsp;<a href="mailto:email@yoursite.com"><strong>email@yoursite.com</strong></a>
+      </p>
+    </section>
+    <section id="borderline">
+      <div></div>
+    </section>
+    <footer>
       <nav>
-        <h1>Student name</h1>
+        <div id="footerStudentName">Student name</div>
         <ul id="showhide1">
-          <li class="uppercase"><span>Back to Top</span></li>
+          <li class="uppercase"><a href="#to-top">Back to Top</a></li>
         </ul>
         <ul id="showhide2">
-          <li class="uppercase"><span>Home</span></li>
-          <li class="uppercase"><span>Portfolio</span></li>
-          <li class="uppercase"><span>Contact</span></li>
+          <li class="uppercase"><a href="#to-top"><span>Home</span></a></li>
+          <li class="uppercase"><a href="#to-portfolio"><span>Portfolio</span></a></li>
+          <li class="uppercase"><a href="#skills"><span>Skills</span></a></li>
+          <li class="uppercase"><a href="#contact"><span>Contact</span></a></li>
         </ul>
       </nav>
     </footer>

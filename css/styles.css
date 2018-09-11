@@ -1,28 +1,33 @@
 /* Global Layout Set-up */
 * {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: #6a6a6a;
 }
-
 .uppercase {
   text-transform: uppercase;
+  font-size: 14px;
 }
-
 .clearfix {
+  content: "";
   clear: both;
+  display: table;
 }
-
+html {
+  background-color: #fafafa;
+}
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
   color: #222;
   background-color: #fff;
   line-height: 1.5;
 }
-p {
-  color: #666;
+h1 {
+  font-size: 1.6em;
 }
+
 /* Link Styles */
 
 a {
@@ -32,9 +37,14 @@ a {
 a:hover {
   color: #6633ff;
 }
-
+/* p {
+  letter-spacing: -0.5px;
+} */
 
 /* Header-------------------- */
+header {
+  background: #fafafa;
+}
 ul,
 ul li {
    margin:0;
@@ -45,77 +55,343 @@ ul {
   display: inline-block;
   position: relative;
 }
-nav ul li {
-  margin: 3px 0;
-
+header nav ul li {
+  margin: 4px 0;
 }
-nav ul li {
-  display: block;
-  position: relative;
-  height: 40px;
-  width: 290px;
-  background-color: skyblue;
-  border: 1px solid red;
-}
-nav {
+header nav {
   line-height: 1;
+    padding-left: 15px;
+  padding-right: 15px;
 }
-span {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+header nav h1 {
+  margin: 0;
+  padding: 25px 0;
 }
 .profile-image {
-  padding-top: 43px;
-  padding-bottom: 43px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 .profile-image img {
   width: 200px;
 }
 .profile-image p {
-  /* width: 200px; */
+  width: 320px;
+  color: #888;
   margin: 0 auto;
-  padding: 14px;
+  padding: 15px 10px;
 }
 /* End Header-------------------- */
 
-
-
 /* Projects-------------------- */
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-weight: 900;
+  padding-bottom: 30px;
+}
 img.main-images{
   width: 290px;
 }
 main {
-  /* width: 320px; */
-  /* margin: auto 0; */
-  padding-top: 43px;
-  padding-bottom: 43px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 .project {
   display: inline-block;
   width: 300px;
-  /* background-color: indianred; */
-  padding-top: 20px;
+}
+.project p {
   padding-bottom: 20px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
 }
 /* End Projects-------------------- */
 
+/* Skills-------------------- */
+#skills {
+  width: 275px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+#skills .bar-light-grey {
+  margin: 20px 0;
+  text-align: left;
+}
+#skills .bar-light-grey div {
+  padding-left: 10px;
+  color: #fff;
+}
+.grey {
+  background-color: #62717e;
+}
+.green {
+  background-color: #52bab4;
+}
+.purple {
+  background-color: #675a85;
+}
+.yellow {
+  background-color: #e0ab26;
+}
+.blue {
+  background-color: #36acd0;
+}
+.dark-blue {
+  background-color: #2572aa;
+}
+.bar-light-grey {
+  background-color: #ededed;
+}
+.twenty-five {
+  width: 25%;
+}
+.thirty-five {
+  width: 35%;
+}
+.seventy-five {
+  width: 75%;
+}
+.ninety {
+  width: 90%;
+}
+/* End Skills-------------------- */
+
+/* Contacts-------------------- */
+#contact {
+  background-color: #fafafa;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#contact h3 {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+#contact p {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+}
+#borderline {
+  height: 1px;
+  background-color: #fafafa;
+}
+#borderline div {
+  height: 100%;
+  width: calc(100% - 40px);
+  border-top: 2px solid #ddd;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* End Contacts-------------------- */
+
 /* Footer-------------------- */
+footer  {
+  background: #fafafa;
+}
+footer nav {
+  padding: 20px 20px 50px;
+}
+footer h3 {
+  padding-bottom: 10px;
+}
+#footerStudentName {
+  float: left;
+  font-weight: 900;
+}
+#showhide1 {
+  font-weight: 900;
+  float: right;
+}
+#showhide1 li a {
+  color: #6a6a6a;
+}
+#showhide1 li a:hover {
+  color: lightgreen;
+}
 #showhide2 {
   display: none;
+  font-weight: 900;
+}
+#showhide2 span {
+  margin-left: 40px;
 }
 /* End Footer-------------------- */
 
 
 /* Styles for larger screens */
-@media all (min-width: 768px) {
+@media (max-width: 767px) {
+  .clearfix {
+      display: block;
+  }
+  header nav ul li a {
+    height: 100%;
+    width: 100%;
+  }
+  header nav ul li {
+    display: block;
+    position: relative;
+    height: 40px;
+    width: 290px;
+    font-weight: 800;
+    background-color: #e1f5fe;
+  }
+  header nav span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header nav ul li a {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  header nav ul li {
+    display: inline;
+    font-weight: 800;
+    background-color: transparent;
+  }
+  header nav {
+    padding-bottom: 20px;
+  }
+  header nav h1 {
+    padding-bottom: 30px;
+  }
+  header nav span {
+    padding: 0 15px;
+  }
+  .profile-image {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .profile-image img {
+    float: right;
+    width: 330px;
+    padding-right: 30px;
+    padding-left: 10px;
+  }
+  .profile-image p {
+    float: left;
+    width: 55%;
+    padding: 0 0 0 30px;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+  .project  {
+    width: 357px;
+    padding-bottom: 20px;
+  }
+  main {
+    padding-bottom: 0;
+  }
+  img.main-images{
+    width: 350px;
+  }
+  #borderline div {
+    width: calc(100% - 60px);
+  }
+  #contact p {
+    width: 550px;
+    font-size: 20px;
+  }
+  #contact p:nth-child(2) {
+    padding-bottom: 15px;
+  }
+  #contact p:nth-child(3) {
+    padding-bottom: 5px;
+  }
   #showhide1 {
     display: none;
   }
+  #showhide2 {
+    display: inline-block;
+    float: right;
+  }
+  footer {
+    padding-bottom: 60px;
+  }
+  footer nav {
+    padding: 20px 30px 50px;
+  }
+  footer nav ul li {
+    float: left;
+    text-align: right;
+  }
 }
 
-@media all (min-width: 1024px) {
-
+@media (min-width: 1024px) {
+  h3 {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  body {
+    width: 970px;
+    margin: 0 auto;
+  }
+  header {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  header nav h1 {
+    float: left;
+    padding-top: 0;
+  }
+  header nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header nav ul {
+    float: right;
+  }
+  .profile-image {
+    width: 1024px;
+    padding-top: 20px;
+  }
+  .profile-image img {
+    width: 450px;
+    padding-right: 60px;
+    padding-left: 20px;
+  }
+  .profile-image p {
+    width: 50%;
+    padding: 0;
+    font-size: 22px;
+  }
+  main {
+    padding-top: 30px;
+  }
+  .project {
+    padding-bottom: 40px;
+    width: 300px;
+  }
+  .project p {
+    padding-bottom: 0;
+  }
+  img.main-images{
+    width: 290px;
+  }
+  #skills {
+    width: 400px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  #borderline div {
+    width: calc(100% - 60px);
+  }
+  footer {
+    padding-bottom: 0;
+  }
+  footer nav {
+    padding: 20px 30px 50px;
+  }
 }
