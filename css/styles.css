@@ -4,15 +4,6 @@
   font-family: 'Open Sans', sans-serif;
   color: #6a6a6a;
 }
-.uppercase {
-  text-transform: uppercase;
-  font-size: 14px;
-}
-.clearfix {
-  content: "";
-  clear: both;
-  display: table;
-}
 html {
   background-color: #fafafa;
 }
@@ -24,12 +15,6 @@ body {
   background-color: #fff;
   line-height: 1.5;
 }
-h1 {
-  font-size: 1.6em;
-}
-
-/* Link Styles */
-
 a {
   text-decoration: none;
   color: #999;
@@ -37,9 +22,21 @@ a {
 a:hover {
   color: #6633ff;
 }
-/* p {
-  letter-spacing: -0.5px;
-} */
+h1 {
+  font-size: 1.6em;
+}
+.uppercase {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
+.font-bold {
+  font-weight: 900;
+}
 
 /* Header-------------------- */
 header {
@@ -55,15 +52,15 @@ ul {
   display: inline-block;
   position: relative;
 }
-header nav ul li {
+header > nav > ul > li {
   margin: 4px 0;
 }
-header nav {
+header > nav {
   line-height: 1;
-    padding-left: 15px;
+  padding-left: 15px;
   padding-right: 15px;
 }
-header nav h1 {
+header > nav > h1 {
   margin: 0;
   padding: 25px 0;
 }
@@ -71,11 +68,11 @@ header nav h1 {
   padding-top: 40px;
   padding-bottom: 30px;
 }
-.profile-image img {
+.profile-image > img {
   max-width: 290px;
   width: 62%;
 }
-.profile-image p {
+.profile-image > p {
   width: 320px;
   color: #36acd0;
   margin: 0 auto;
@@ -88,7 +85,6 @@ h2 {
   font-size: 20px;
 }
 h3 {
-  font-weight: 900;
   padding-bottom: 30px;
 }
 img.main-images{
@@ -104,7 +100,7 @@ main {
   display: inline-block;
   /* width: 300px; */
 }
-.project p {
+.project > p {
   padding-bottom: 20px;
   width: 280px;
   margin-left: auto;
@@ -170,11 +166,11 @@ main {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-#contact h3 {
+#contact > h3 {
   padding-bottom: 15px;
   padding-top: 15px;
 }
-#contact p {
+#contact > p {
   width: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -184,7 +180,7 @@ main {
   height: 1px;
   background-color: #fafafa;
 }
-#borderline div {
+#borderline > div {
   height: 100%;
   width: calc(100% - 40px);
   border-top: 2px solid #ddd;
@@ -195,31 +191,28 @@ main {
 
 /* Footer-------------------- */
 footer  {
-  background: #fafafa;
+  background-color: #fafafa;
 }
-footer nav {
+footer > nav {
   padding: 20px 20px 50px;
 }
-footer h3 {
+footer > h3 {
   padding-bottom: 10px;
 }
-#footerStudentName {
+#footer-student-name {
   float: left;
-  font-weight: 900;
 }
 #showhide1 {
-  font-weight: 900;
   float: right;
 }
-#showhide1 li a {
+#showhide1 > li > a {
   color: #6a6a6a;
 }
-#showhide1 li a:hover {
+#showhide1 > li > a:hover {
   color: lightgreen;
 }
 #showhide2 {
   display: none;
-  font-weight: 900;
 }
 #showhide2 span {
   margin-left: 40px;
@@ -232,16 +225,16 @@ footer h3 {
   .clearfix {
       display: block;
   }
-  header nav ul li a {
+  header > nav > ul > li > a {
     height: 100%;
     width: 100%;
   }
-  header nav ul li {
+  header > nav > ul > li {
     display: block;
     position: relative;
     height: 40px;
     width: 290px;
-    font-weight: 800;
+    font-weight: 900;
     background-color: #fff;
   }
   header nav span {
@@ -251,7 +244,7 @@ footer h3 {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  header nav ul li a {
+  header > nav > ul > li > a {
     display: block;
   }
 }
@@ -260,15 +253,14 @@ footer h3 {
     padding-top: 30px;
     padding-bottom: 50px;
   }
-  header nav ul li {
+  header > nav > ul > li {
     display: inline;
-    font-weight: 800;
     background-color: transparent;
   }
-  header nav {
+  header > nav {
     padding-bottom: 20px;
   }
-  header nav h1 {
+  header > nav > h1 {
     padding-bottom: 30px;
   }
   header nav span {
@@ -278,13 +270,13 @@ footer h3 {
     width: 768px;
     margin: 0 auto;
   }
-  .profile-image img {
+  .profile-image > img {
     float: right;
     width: 330px;
     padding-right: 30px;
     padding-left: 10px;
   }
-  .profile-image p {
+  .profile-image > p {
     float: left;
     width: 55%;
     padding: 0 0 0 30px;
@@ -302,17 +294,17 @@ footer h3 {
   img.main-images{
     width: 350px;
   }
-  #borderline div {
+  #borderline > div {
     width: calc(100% - 60px);
   }
-  #contact p {
+  #contact > p {
     width: 550px;
     font-size: 20px;
   }
-  #contact p:nth-child(2) {
+  #contact > p:nth-child(2) {
     padding-bottom: 15px;
   }
-  #contact p:nth-child(3) {
+  #contact > p:nth-child(3) {
     padding-bottom: 5px;
   }
   #showhide1 {
@@ -325,10 +317,10 @@ footer h3 {
   footer {
     padding-bottom: 60px;
   }
-  footer nav {
+  footer > nav {
     padding: 20px 30px 50px;
   }
-  footer nav ul li {
+  footer > nav > ul > li {
     float: left;
     text-align: right;
   }
@@ -347,27 +339,27 @@ footer h3 {
     padding-top: 50px;
     padding-bottom: 30px;
   }
-  header nav h1 {
+  header > nav > h1 {
     float: left;
     padding-top: 0;
   }
-  header nav {
+  header > nav {
     padding-left: 0;
     padding-right: 0;
   }
-  header nav ul {
+  header > nav > ul {
     float: right;
   }
   .profile-image {
     width: 1024px;
     padding-top: 20px;
   }
-  .profile-image img {
+  .profile-image > img {
     width: 450px;
     padding-right: 60px;
     padding-left: 20px;
   }
-  .profile-image p {
+  .profile-image > p {
     width: 50%;
     padding: 0;
     font-size: 22px;
@@ -379,7 +371,7 @@ footer h3 {
     padding-bottom: 40px;
     width: 300px;
   }
-  .project p {
+  .project > p {
     padding-bottom: 0;
   }
   img.main-images{
@@ -390,13 +382,10 @@ footer h3 {
     margin: 0 auto;
     padding-bottom: 60px;
   }
-  #borderline div {
-    width: calc(100% - 60px);
-  }
   footer {
     padding-bottom: 0;
   }
-  footer nav {
+  footer > nav {
     padding: 20px 30px 50px;
   }
 }
