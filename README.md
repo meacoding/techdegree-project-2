@@ -2,6 +2,6 @@
 
 Front-End Web Development
 
-Tests skills on responsive design and ability create a website from a mockup.
+Tests skills on responsive design and ability to create a website from a mockup.
 
 Mockup and images provided.
